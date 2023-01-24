@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/levels/menu/menuSelect.unity
+    guid: 40616f2ace1dd8c4c8025c19ab22852d
+  - enabled: 1
+    path: Assets/levels/game/level001.unity
+    guid: 6f119727ed96dfe498811da92d2dd0c8
+  - enabled: 1
+    path: Assets/levels/game/level002.unity
+    guid: c854123a3da4eee46bad8afa8ddd64b0
+  - enabled: 1
+    path: Assets/levels/game/level003.unity
+    guid: d60650a90a3dbb745851bb1ee8ee9904
+  - enabled: 1
+    path: Assets/levels/game/level004.unity
+    guid: ec6985a3a657c8e43894deb6783350a6
+  - enabled: 1
+    path: Assets/levels/game/level005.unity
+    guid: 2463687423ea91546b26213be4e4cd52
+  - enabled: 1
+    path: Assets/levels/game/level006.unity
+    guid: 77c65cf29ab41cb4d979c70918660603
+  - enabled: 1
+    path: Assets/levels/game/level007.unity
+    guid: 72190a79f05f3b042ab5778e3033233a
+  - enabled: 1
+    path: Assets/levels/game/level008.unity
+    guid: b1b5840003d7db947abc67e42973a39a
+  - enabled: 1
+    path: Assets/levels/game/level009.unity
+    guid: 2ac8ba8183654bb45b1a571592ae6a63
+  - enabled: 1
+    path: Assets/levels/game/level010.unity
+    guid: 90a75842a674308448765373051acd3d
   m_configObjects: {}
