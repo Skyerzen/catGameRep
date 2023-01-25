@@ -642,7 +642,7 @@ MonoBehaviour:
   targets: []
   coneFov: 120
   coneDist: 3.5
-  radDist: 0.8
+  radDist: 1.2
   seeyou: 0
   head: {fileID: 102114}
 --- !u!114 &11467972
