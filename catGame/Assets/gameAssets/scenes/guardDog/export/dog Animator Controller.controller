@@ -316,7 +316,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400002, guid: e5eda421cdc089447a6df1b46cfcada3, type: 3}
+  m_Motion: {fileID: -3423856892083557612, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_Tag: 
   m_SpeedParameter: speed
   m_MirrorParameter: 
@@ -342,7 +342,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400008, guid: e5eda421cdc089447a6df1b46cfcada3, type: 3}
+  m_Motion: {fileID: 4116101311840411326, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -371,7 +371,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400004, guid: e5eda421cdc089447a6df1b46cfcada3, type: 3}
+  m_Motion: {fileID: 5651584422460695, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -400,7 +400,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e5eda421cdc089447a6df1b46cfcada3, type: 3}
+  m_Motion: {fileID: 1827226128182048838, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -427,7 +427,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400006, guid: e5eda421cdc089447a6df1b46cfcada3, type: 3}
+  m_Motion: {fileID: 5002452122797608574, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -450,7 +450,7 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 204, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110291166}
-    m_Position: {x: 588, y: 84, z: 0}
+    m_Position: {x: 590, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 110298070}
     m_Position: {x: 600, y: -36, z: 0}
