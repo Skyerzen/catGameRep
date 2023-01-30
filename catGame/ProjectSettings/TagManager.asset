@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - enemy
+  - UI
+  - options
+  - powIcon
+  - muteOption
+  - revOption
+  - exit
+  - powerUp
+  - tgt
   layers:
   - Default
   - TransparentFX
