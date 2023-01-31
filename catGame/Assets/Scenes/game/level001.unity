@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5e83a80b188a2624b88084ed59730e44, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 5d254856793299944893e90430aabf37, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -1743,11 +1743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010780790196, guid: d8c87e68b2ca4f14aaa873e089a050fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.242408
+      value: 7.95
       objectReference: {fileID: 0}
     - target: {fileID: 4000010780790196, guid: d8c87e68b2ca4f14aaa873e089a050fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.8754063
+      value: -7.72
       objectReference: {fileID: 0}
     - target: {fileID: 4000010780790196, guid: d8c87e68b2ca4f14aaa873e089a050fa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2121,7 +2121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 108000012406745514, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 108000012406745514, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_Shadows.m_Bias
@@ -2875,17 +2875,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a789a4fdccaf5434bbf0586b71d37f3c, type: 3}
---- !u!114 &1163755603 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8585354138887156398, guid: a789a4fdccaf5434bbf0586b71d37f3c, type: 3}
-  m_PrefabInstance: {fileID: 1163755602}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b69856e10dbbc346ab62f974b15217d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1183894307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3283,27 +3272,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010114643278, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9986921
+      value: 0.9997579
       objectReference: {fileID: 0}
     - target: {fileID: 4000010114643278, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0010157728
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010114643278, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.021984937
+      value: -0.022006877
       objectReference: {fileID: 0}
     - target: {fileID: 4000010114643278, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.04614883
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010114643278, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.4490001
+      value: -2.522
       objectReference: {fileID: 0}
     - target: {fileID: 4000010114643278, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 5.142
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55a0a81c1f98a7d42858cd9df559e4af, type: 3}
@@ -3796,7 +3785,7 @@ PrefabInstance:
     - target: {fileID: 114000012485958844, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1163755603}
+      objectReference: {fileID: 0}
     - target: {fileID: 114000012485958844, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MuteOnClick
