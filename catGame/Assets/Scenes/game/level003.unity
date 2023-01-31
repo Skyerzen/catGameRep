@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 27a850924c30c054894e1cf1025b3305, type: 2}
   m_LightingSettings: {fileID: 1701646255}
 --- !u!196 &4
 NavMeshSettings:
@@ -859,7 +859,7 @@ Transform:
   - {fileID: 1476379074}
   - {fileID: 1462949912}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &265549098
 PrefabInstance:
@@ -1702,7 +1702,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000013760682944, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013360250076, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_RootOrder
@@ -3112,17 +3112,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a789a4fdccaf5434bbf0586b71d37f3c, type: 3}
---- !u!114 &1163755603 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8585354138887156398, guid: a789a4fdccaf5434bbf0586b71d37f3c, type: 3}
-  m_PrefabInstance: {fileID: 1163755602}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b69856e10dbbc346ab62f974b15217d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1233025064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4291,7 +4280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22423478, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 22423478, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4356,7 +4345,7 @@ PrefabInstance:
     - target: {fileID: 114000012485958844, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1163755603}
+      objectReference: {fileID: 0}
     - target: {fileID: 114000012485958844, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MuteOnClick
@@ -4563,7 +4552,7 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 0
-  m_BakeBackend: 0
+  m_BakeBackend: 1
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2

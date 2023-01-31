@@ -2057,7 +2057,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000013760682944, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013360250076, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_RootOrder
@@ -2121,7 +2121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 108000012406745514, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 108000012406745514, guid: 57cf8696510762d44893a1de9057b07c, type: 3}
       propertyPath: m_Shadows.m_Bias
