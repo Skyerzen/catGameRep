@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: potato_idle
+    second: potato_idle_brk
   - first:
       74: -998496362607748373
     second: potato_walk
@@ -21,11 +21,19 @@ ModelImporter:
   - first:
       74: -9210571187892496038
     second: potato_Clear
+  - first:
+      74: -4229551620934565079
+    second: potato_idle
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: potato_bodyMesh1_Mat1
+    second: {fileID: 2100000, guid: ab4662b91d1076e498c3cf9edfc632ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: potato_bodyMesh1_Mat1.001
     second: {fileID: 2100000, guid: ab4662b91d1076e498c3cf9edfc632ca, type: 2}
   materials:
     materialImportMode: 1
@@ -55,115 +63,6 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
-    - serializedVersion: 16
-      name: potato_idle
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 1
-      lastFrame: 79
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: potato:mesh1
-        weight: 1
-      - path: potato:mesh1/potato:bodyMesh1
-        weight: 1
-      - path: potato:skel1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:C_head_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:C_jaw_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:C_jaw_jnt1/potato:C_jaw_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:l_ear_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:l_ear_jnt1/potato:l_ear_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:l_ear_jnt3
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:C_neck_jnt1/potato:C_head_jnt1/potato:l_ear_jnt3/potato:l_ear_jnt4
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt1/potato:L_shoulder_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt1/potato:L_shoulder_jnt1/potato:L_elbow_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt1/potato:L_shoulder_jnt1/potato:L_elbow_jnt1/potato:L_hand_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt1/potato:L_shoulder_jnt1/potato:L_elbow_jnt1/potato:L_hand_jnt1/potato:L_hand_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt2/potato:L_shoulder_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt2/potato:L_shoulder_jnt2/potato:L_elbow_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt2/potato:L_shoulder_jnt2/potato:L_elbow_jnt2/potato:L_hand_jnt3
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_spine_jnt1/potato:C_spine_jnt2/potato:L_collar_jnt2/potato:L_shoulder_jnt2/potato:L_elbow_jnt2/potato:L_hand_jnt3/potato:L_hand_jnt4
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_tail_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_tail_jnt1/potato:C_tail_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_tail_jnt1/potato:C_tail_jnt2/potato:C_tail_jnt3
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_tail_jnt1/potato:C_tail_jnt2/potato:C_tail_jnt3/potato:C_tail_jnt4
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_tail_jnt1/potato:C_tail_jnt2/potato:C_tail_jnt3/potato:C_tail_jnt4/potato:C_tail_jnt5
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:C_tail_jnt1/potato:C_tail_jnt2/potato:C_tail_jnt3/potato:C_tail_jnt4/potato:C_tail_jnt5/potato:C_tail_jnt6
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt1/potato:L_knee_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt1/potato:L_knee_jnt1/potato:L_foot_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt1/potato:L_knee_jnt1/potato:L_foot_jnt1/potato:L_foot_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt2
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt2/potato:L_knee_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt2/potato:L_knee_jnt1/potato:L_foot_jnt1
-        weight: 1
-      - path: potato:skel1/potato:C_root_jnt1/potato:L_hip_jnt2/potato:L_knee_jnt1/potato:L_foot_jnt1/potato:L_foot_jnt2
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: potato_walk
       takeName: Take 001
@@ -322,6 +221,35 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: potato_idle
+      takeName: rig|bakedAnimations
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

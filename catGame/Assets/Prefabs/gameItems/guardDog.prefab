@@ -645,7 +645,7 @@ MonoBehaviour:
   coneDist: 3.5
   radDist: 1.2
   seeyou: 0
-  head: {fileID: 5752218617532023809}
+  head: {fileID: 8817108227294438315}
 --- !u!114 &11467972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,8 +1756,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_PrefabInstance: {fileID: 2988114592317275700}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5752218617532023809 stripped
+--- !u!1 &8817108227294438315 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -1827311114747512267, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5992957759035039135, guid: 918138cac8a3fdd498d70fcb24ca597e, type: 3}
   m_PrefabInstance: {fileID: 2988114592317275700}
   m_PrefabAsset: {fileID: 0}

@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: dog_Idle
+    second: dog_Idle_brk
   - first:
       74: -3423856892083557612
     second: dog_Walk
@@ -18,6 +18,9 @@ ModelImporter:
   - first:
       74: 4116101311840411326
     second: dog_findCycle
+  - first:
+      74: -3590692907346697789
+    second: dog_Idle
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -52,111 +55,6 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
-    - serializedVersion: 16
-      name: dog_Idle
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 1
-      lastFrame: 95
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: mesh1
-        weight: 1
-      - path: mesh1/bodyMesh1
-        weight: 1
-      - path: skel1
-        weight: 1
-      - path: skel1/C_root_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/C_head_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/C_jaw_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/C_jaw_jnt1/C_jaw_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/l_ear_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/l_ear_jnt1/l_ear_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/l_ear_jnt3
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/C_neck_jnt1/C_head_jnt1/l_ear_jnt3/l_ear_jnt4
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt1/L_shoulder_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt1/L_shoulder_jnt1/L_elbow_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt1/L_shoulder_jnt1/L_elbow_jnt1/L_hand_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt1/L_shoulder_jnt1/L_elbow_jnt1/L_hand_jnt1/L_hand_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt2/L_shoulder_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt2/L_shoulder_jnt2/L_elbow_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt2/L_shoulder_jnt2/L_elbow_jnt2/L_hand_jnt3
-        weight: 1
-      - path: skel1/C_root_jnt1/C_spine_jnt1/C_spine_jnt2/L_collar_jnt2/L_shoulder_jnt2/L_elbow_jnt2/L_hand_jnt3/L_hand_jnt4
-        weight: 1
-      - path: skel1/C_root_jnt1/C_tail_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/C_tail_jnt1/C_tail_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/C_tail_jnt1/C_tail_jnt2/C_tail_jnt3
-        weight: 1
-      - path: skel1/C_root_jnt1/C_tail_jnt1/C_tail_jnt2/C_tail_jnt3/C_tail_jnt4
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt1/L_knee_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt1/L_knee_jnt1/L_foot_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt1/L_knee_jnt1/L_foot_jnt1/L_foot_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt2
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt2/L_knee_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt2/L_knee_jnt1/L_foot_jnt1
-        weight: 1
-      - path: skel1/C_root_jnt1/L_hip_jnt2/L_knee_jnt1/L_foot_jnt1/L_foot_jnt2
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: dog_Walk
       takeName: Take 001
@@ -301,6 +199,35 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: dog_Idle
+      takeName: rig|guardDog_animationsBaked
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 95
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -357,7 +284,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 100
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
