@@ -7,6 +7,7 @@ public class CanPickUp : MonoBehaviour {
     private AudioSource pickUpSound;
     Animator anim;
     public GameObject Pow;
+    public float wait = 1f;
 
     //enumerator with timer
     IEnumerator waitDestroy(float seconds)
@@ -33,7 +34,7 @@ public class CanPickUp : MonoBehaviour {
             anim.SetBool("Spin", true);
             if (gate == false)
             {
-                StartCoroutine(waitDestroy(2f));
+                StartCoroutine(waitDestroy(wait));
             }
         }
 	}
