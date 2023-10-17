@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -11,7 +12,8 @@ public class PlayerMovement : MonoBehaviour {
     
     //Screen Joystick.
     private Vector2 scrnCntr; //This will contain the center of screen.
-	private Vector2 scrnJoystick; //This will contain the mouse screen position.
+    private Vector2 center;
+    private Vector2 scrnJoystick; //This will contain the mouse screen position.
     private float deadStick = .4f;
 	
 	//Character Controller.
@@ -27,7 +29,11 @@ public class PlayerMovement : MonoBehaviour {
 	public float turnSpeed = 12f;
     public float reverse; //this turns the controller into reverse controller
     public Toggle movToggle;
+    public Toggle scrnToggle;
+    public bool screenCenter;
 
+    private Vector2 currentTouchPosition;
+    private Vector2 initialTouchPosition;
     //Game Functions
     //**********************************************
 
@@ -38,8 +44,8 @@ public class PlayerMovement : MonoBehaviour {
         GoalObj = GameObject.FindGameObjectWithTag("exit");
         Enemies = GameObject.FindGameObjectsWithTag("enemy");
         movToggle = GameObject.Find("ReverseToggle").GetComponent<Toggle>(); //fix this line of code!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        scrnCntr.Set (Screen.width *.5f, Screen.height * .5f);        //this halves the resolution to find the center
+        scrnToggle = GameObject.Find("ScreenToggle").GetComponent<Toggle>();
+        scrnCntr.Set(Screen.width * .5f, Screen.height * .5f);       //this halves the resolution to find the center
 
         if (PlayerPrefs.GetInt("Rev") == 1) //this sets the reverse option to whatever it was set last.
         {
@@ -51,10 +57,19 @@ public class PlayerMovement : MonoBehaviour {
             movToggle.isOn = false;
             reverse = 1;
         }
-
+        if (PlayerPrefs.GetInt("Scrn")== 1)
+        {
+            scrnToggle.isOn = true;
+            screenCenter = true;
+        }
+        else if (PlayerPrefs.GetInt("Scrn")==0)
+        {
+            scrnToggle.isOn = false;
+            screenCenter=false;
+        }
     }
 
-    public void ReverseOnClick()
+   /* public void ReverseOnClick()
     {
         if (movToggle.isOn == false)
         {
@@ -68,7 +83,7 @@ public class PlayerMovement : MonoBehaviour {
             PlayerPrefs.Save();
             reverse = -1;
         }
-    }
+    }*/
 
         void Update ()//adds a condition so when detection.seeyou is true, the character movement is set to zero and the caught animation is played.
     {
@@ -143,13 +158,40 @@ public class PlayerMovement : MonoBehaviour {
 
     void ScreenJoystick()
     {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0); // Get the first touch
+
+            if (screenCenter == true)
+            {
+                print("screen center is on");
+                center = scrnCntr;
+            }
+            else
+            {
+                if (touch.phase == TouchPhase.Began)
+                {
+                    initialTouchPosition = touch.position;
+                    // Now you have the initial screen coordinates of the touch
+                    //Debug.Log("Initial Touch Position: " + initialTouchPosition);
+                }
+                center = initialTouchPosition;
+                print("standard center is on");
+            }
+
+            currentTouchPosition = touch.position;
+            // Now you have the current screen coordinates of the touch
+            //Debug.Log("Current Touch Position: " + currentTouchPosition);
+        }
+
+
         //this gets the screen position of the mouse on the screen
-        scrnJoystick = Input.mousePosition;
+        //print(Center);
+        scrnJoystick = currentTouchPosition;
         //this centers it and Normalizes the value(0-10). ????????????????
-        scrnJoystick = (scrnJoystick - scrnCntr);
+        scrnJoystick = (scrnJoystick - center);
         scrnJoystick = scrnJoystick * reverse;
         scrnJoystick.Set(scrnJoystick.x / scrnCntr.x * moveSpeed, scrnJoystick.y / scrnCntr.y * moveSpeed);
-
         scrnJoystick = Vector2.ClampMagnitude(scrnJoystick, moveSpeed);
         if (Vector2.SqrMagnitude(scrnJoystick) < deadStick)
         {

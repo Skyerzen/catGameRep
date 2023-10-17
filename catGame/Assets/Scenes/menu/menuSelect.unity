@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 224758491}
   - component: {fileID: 224758490}
   m_Layer: 5
-  m_Name: RegCtrlBackground
+  m_Name: ScrnCtrlBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4227,7 +4227,7 @@ GameObject:
   - component: {fileID: 777306438}
   - component: {fileID: 777306437}
   m_Layer: 5
-  m_Name: RegCtrlLabel
+  m_Name: ScrnCtrlLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4285,7 +4285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Regular Controls
+  m_Text: Screen Controls
 --- !u!222 &777306438
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8987,6 +8987,7 @@ GameObject:
   - component: {fileID: 1975621421}
   - component: {fileID: 1975621422}
   - component: {fileID: 1975621423}
+  - component: {fileID: 1975621424}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9223,6 +9224,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggle: {fileID: 550711440}
+--- !u!114 &1975621424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975621414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 344bc0369f8e71b44a50a6c3e99024ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1977622906}
 --- !u!1 &1977622903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9233,9 +9247,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1977622904}
   - component: {fileID: 1977622906}
-  - component: {fileID: 1977622905}
+  - component: {fileID: 1977622907}
   m_Layer: 5
-  m_Name: RegCtrlToggle
+  m_Name: ScrnCtrlToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9263,19 +9277,6 @@ RectTransform:
   m_AnchoredPosition: {x: -800, y: -141}
   m_SizeDelta: {x: 510, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1977622905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977622903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b31d5ebf015d1478a344e38856637b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggle: {fileID: 1977622906}
 --- !u!114 &1977622906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9323,9 +9324,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1977622905}
-        m_TargetAssemblyTypeName: RevTgl, Assembly-CSharp
-        m_MethodName: RevOnClick
+      - m_Target: {fileID: 1977622907}
+        m_TargetAssemblyTypeName: ScrnTgl, Assembly-CSharp
+        m_MethodName: ScrnOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9336,6 +9337,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1977622907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977622903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 344bc0369f8e71b44a50a6c3e99024ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1977622906}
 --- !u!1 &1992245062
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,7 +10094,7 @@ GameObject:
   - component: {fileID: 2100734286}
   - component: {fileID: 2100734285}
   m_Layer: 5
-  m_Name: RegCtrlImage
+  m_Name: ScrnCtrlImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
