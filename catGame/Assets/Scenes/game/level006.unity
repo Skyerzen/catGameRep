@@ -4712,7 +4712,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 11487024, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: timeA
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 11487024, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: timeB

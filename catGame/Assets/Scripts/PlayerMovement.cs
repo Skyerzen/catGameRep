@@ -36,7 +36,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (GoalObj.GetComponent<ExitLevel>().goalReached)
+        /*if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Debug.Log("esc pressed");
+        }*/
+
+            if (GoalObj.GetComponent<ExitLevel>().goalReached)
         {
             PlayerStops();
         }
@@ -148,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
         scrnJoystick = currentTouchPosition;
         scrnJoystick = (scrnJoystick - center);
         scrnJoystick = scrnJoystick * reverse;
-        scrnJoystick.Set(scrnJoystick.x / scrnCntr.x * moveSpeed, scrnJoystick.y / scrnCntr.y * moveSpeed);
+        scrnJoystick.Set(scrnJoystick.x / center.x * moveSpeed, scrnJoystick.y / center.y * moveSpeed);
         scrnJoystick = Vector2.ClampMagnitude(scrnJoystick, moveSpeed);
         if (scrnJoystick.sqrMagnitude < deadStick * deadStick)
         {
