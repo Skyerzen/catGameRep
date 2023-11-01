@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using Unity.VisualScripting;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("esc pressed");
         }*/
 
-            if (GoalObj.GetComponent<ExitLevel>().goalReached)
+        if (GoalObj.GetComponent<ExitLevel>().goalReached)
         {
             PlayerStops();
         }
@@ -57,6 +58,14 @@ public class PlayerMovement : MonoBehaviour
                 ScreenJoystick();
                 PlayerMove();
             }
+        }
+        
+        if (gameUI.GetComponent<RevTgl>().reversa == true)
+        {
+            reverse = -1;
+        }else
+        {
+            reverse = 1;
         }
     }
 

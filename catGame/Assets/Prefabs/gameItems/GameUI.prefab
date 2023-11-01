@@ -1186,8 +1186,7 @@ GameObject:
   - component: {fileID: 2319017325578761492}
   - component: {fileID: 11424320}
   - component: {fileID: 114000012194161080}
-  - component: {fileID: 3504627054453798602}
-  - component: {fileID: 922580950684547616}
+  - component: {fileID: 7321562162395436148}
   m_Layer: 0
   m_Name: GameUI
   m_TagString: UI
@@ -1711,20 +1710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   options: {fileID: 0}
---- !u!114 &3504627054453798602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178816}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b31d5ebf015d1478a344e38856637b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggle: {fileID: 114000013325746530}
---- !u!114 &922580950684547616
+--- !u!114 &7321562162395436148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1733,10 +1719,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 178816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a277773c21fab34428fba1e1cd99953f, type: 3}
+  m_Script: {fileID: 11500000, guid: 98b31d5ebf015d1478a344e38856637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revToggle: {fileID: 114000013325746530}
+  toggle: {fileID: 114000013325746530}
 --- !u!1 &194382
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,9 +3151,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922580950684547616}
-        m_TargetAssemblyTypeName: reverseOption, Assembly-CSharp
-        m_MethodName: ReverseOnClick
+      - m_Target: {fileID: 7321562162395436148}
+        m_TargetAssemblyTypeName: RevTgl, Assembly-CSharp
+        m_MethodName: RevOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
