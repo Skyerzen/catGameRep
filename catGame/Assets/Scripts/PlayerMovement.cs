@@ -67,6 +67,15 @@ public class PlayerMovement : MonoBehaviour
         {
             reverse = 1;
         }
+
+        if (gameUI.GetComponent<ScrnTgl>().pantalla == true)
+        {
+            screenCenter = false;
+        }
+        else
+        {
+            screenCenter = true;
+        }
     }
 
     void InitializeReferences()

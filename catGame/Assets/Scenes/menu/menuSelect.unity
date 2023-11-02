@@ -2749,6 +2749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b31d5ebf015d1478a344e38856637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reversa: 0
   toggle: {fileID: 550711440}
 --- !u!1 &560853741
 GameObject:
@@ -9223,6 +9224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b31d5ebf015d1478a344e38856637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reversa: 0
   toggle: {fileID: 550711440}
 --- !u!114 &1975621424
 MonoBehaviour:
@@ -9236,6 +9238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344bc0369f8e71b44a50a6c3e99024ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pantalla: 0
   toggle: {fileID: 1977622906}
 --- !u!1 &1977622903
 GameObject:
@@ -9247,7 +9250,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1977622904}
   - component: {fileID: 1977622906}
-  - component: {fileID: 1977622907}
   m_Layer: 5
   m_Name: ScrnCtrlToggle
   m_TagString: Untagged
@@ -9324,7 +9326,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1977622907}
+      - m_Target: {fileID: 1975621424}
         m_TargetAssemblyTypeName: ScrnTgl, Assembly-CSharp
         m_MethodName: ScrnOnClick
         m_Mode: 1
@@ -9337,19 +9339,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
---- !u!114 &1977622907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977622903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344bc0369f8e71b44a50a6c3e99024ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggle: {fileID: 1977622906}
 --- !u!1 &1992245062
 GameObject:
   m_ObjectHideFlags: 0

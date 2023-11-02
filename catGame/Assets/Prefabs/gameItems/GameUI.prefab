@@ -1187,6 +1187,7 @@ GameObject:
   - component: {fileID: 11424320}
   - component: {fileID: 114000012194161080}
   - component: {fileID: 7321562162395436148}
+  - component: {fileID: 5922108937592988357}
   m_Layer: 0
   m_Name: GameUI
   m_TagString: UI
@@ -1722,7 +1723,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b31d5ebf015d1478a344e38856637b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reversa: 0
   toggle: {fileID: 114000013325746530}
+--- !u!114 &5922108937592988357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 344bc0369f8e71b44a50a6c3e99024ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 600710602797901704}
 --- !u!1 &194382
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,9 +4307,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ReverseOnClick
+      - m_Target: {fileID: 5922108937592988357}
+        m_TargetAssemblyTypeName: ScrnTgl, Assembly-CSharp
+        m_MethodName: ScrnOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
