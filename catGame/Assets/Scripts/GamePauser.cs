@@ -14,7 +14,7 @@ public class GamePauser : MonoBehaviour {
 
     void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1)||Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("esc pressed");
             if(Time.timeScale == 1)

@@ -18,12 +18,12 @@ public class RevTgl : MonoBehaviour {
 
             if (PlayerPrefs.GetInt("Rev") == 0)
             {
-                Debug.Log(toggle.name + " on awake, rev was set to OFF " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to OFF");
+                //Debug.Log(toggle.name + " on awake, rev was set to OFF " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to OFF");
                 toggle.isOn = false;
             }
             else if (PlayerPrefs.GetInt("Rev") == 1)
             {
-                Debug.Log(toggle.name + " on awake, rev was set to ON " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to ON");
+                //Debug.Log(toggle.name + " on awake, rev was set to ON " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to ON");
                 toggle.isOn = true;
             }
         }
@@ -33,7 +33,7 @@ public class RevTgl : MonoBehaviour {
     {
         if (toggle.isOn == true)
         {
-            Debug.Log("On click! " + toggle.name + " Turns Reverse from ON to OFF!: " + PlayerPrefs.GetInt("Rev"));
+            //Debug.Log("On click! " + toggle.name + " Turns Reverse from ON to OFF!: " + PlayerPrefs.GetInt("Rev"));
             PlayerPrefs.SetInt("Rev", 1);
             PlayerPrefs.Save();
             reversa = true;
@@ -41,7 +41,7 @@ public class RevTgl : MonoBehaviour {
         }
         else if (toggle.isOn == false)
         {
-            Debug.Log("one click! " + toggle.name + " Turns Reverse from OFF to ON!: " + PlayerPrefs.GetInt("Rev"));
+            //Debug.Log("one click! " + toggle.name + " Turns Reverse from OFF to ON!: " + PlayerPrefs.GetInt("Rev"));
             PlayerPrefs.SetInt("Rev", 0);
             PlayerPrefs.Save();
             reversa = false;

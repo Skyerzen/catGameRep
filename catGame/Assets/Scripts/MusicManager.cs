@@ -57,6 +57,7 @@ public class MusicManager : MonoBehaviour
         musicSource.mute = true;
         clearSource.mute = true;
         foundSource.mute = true;
+        //Debug.Log("turn music on");
     }
     else if (musicManToggle.isOn)
     {
@@ -65,6 +66,7 @@ public class MusicManager : MonoBehaviour
         musicSource.mute = false;
         clearSource.mute = false;
         foundSource.mute = false;
+        //Debug.Log("turn music off");
     }
 }
 

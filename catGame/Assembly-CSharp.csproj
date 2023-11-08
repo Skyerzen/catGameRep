@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\MuteTgl.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\MusicTgl.cs" />
+    <Compile Include="Assets\Scripts\testTgl.cs" />
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\ExitLevel.cs" />
     <Compile Include="Assets\Scripts\ReturnMenuOnClick.cs" />

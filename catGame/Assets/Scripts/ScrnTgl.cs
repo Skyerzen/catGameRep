@@ -18,12 +18,12 @@ public class ScrnTgl : MonoBehaviour {
 
             if (PlayerPrefs.GetInt("Scn") == 0)
             {
-                Debug.Log(toggle.name + " on awake, scn was set to OFF " + PlayerPrefs.GetInt("Scn") + " in the playerprefs, setting the button in the main menu to OFF");
+                //Debug.Log(toggle.name + " on awake, scn was set to OFF " + PlayerPrefs.GetInt("Scn") + " in the playerprefs, setting the button in the main menu to OFF");
                 toggle.isOn = false;
             }
             else if (PlayerPrefs.GetInt("Scn") == 1)
             {
-                Debug.Log(toggle.name + " on awake, Scn was set to ON " + PlayerPrefs.GetInt("Scn") + " in the playerprefs, setting the button in the main menu to ON");
+                //Debug.Log(toggle.name + " on awake, Scn was set to ON " + PlayerPrefs.GetInt("Scn") + " in the playerprefs, setting the button in the main menu to ON");
                 toggle.isOn = true;
             }
         }
@@ -33,7 +33,7 @@ public class ScrnTgl : MonoBehaviour {
     {
         if (toggle.isOn == true)
         {
-            Debug.Log("On click! " + toggle.name + " Turns Screen from ON to OFF!: " + PlayerPrefs.GetInt("Scn"));
+            //Debug.Log("On click! " + toggle.name + " Turns Screen from ON to OFF!: " + PlayerPrefs.GetInt("Scn"));
             PlayerPrefs.SetInt("Scn", 1);
             PlayerPrefs.Save();
             pantalla = false;
@@ -41,7 +41,7 @@ public class ScrnTgl : MonoBehaviour {
         }
         else if (toggle.isOn == false)
         {
-            Debug.Log("one click! " + toggle.name + " Turns Screen from OFF to ON!: " + PlayerPrefs.GetInt("Scn"));
+            //Debug.Log("one click! " + toggle.name + " Turns Screen from OFF to ON!: " + PlayerPrefs.GetInt("Scn"));
             PlayerPrefs.SetInt("Scn", 0);
             PlayerPrefs.Save();
             pantalla = true;

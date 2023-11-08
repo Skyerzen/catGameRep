@@ -32,12 +32,14 @@ public class MusicTgl : MonoBehaviour {
             PlayerPrefs.SetInt("Music", 1);
             PlayerPrefs.Save();
             musicSource.mute = true;
+            //Debug.Log("music OFF");
         }
         else if (musicToggle.isOn)
         {
             PlayerPrefs.SetInt("Music", 0);
             PlayerPrefs.Save();
             musicSource.mute = false;
+            //Debug.Log("music ON");
         }
     }
 }

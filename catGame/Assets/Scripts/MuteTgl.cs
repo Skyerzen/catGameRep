@@ -5,7 +5,7 @@ public class MuteTgl : MonoBehaviour {
 
     public Toggle muteToggle;
 
-    void Awake()
+    void Start()
     {
 
         muteToggle = GameObject.Find("MuteToggle").GetComponent<Toggle>();  //fix this line of code!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -35,13 +35,16 @@ public class MuteTgl : MonoBehaviour {
             PlayerPrefs.SetInt("Mute", 1);
             PlayerPrefs.Save();
             AudioListener.pause = false;
+            //Debug.Log("mute OFF");
         }
-        else if (muteToggle.isOn)
+        else if (muteToggle.isOn == true)
         {
             PlayerPrefs.SetInt("Mute", 0);
             PlayerPrefs.Save();
             AudioListener.pause = true;
+            //Debug.Log("mute ON");
         }
+        //Debug.Log("Hello?");
     }
 
 }
