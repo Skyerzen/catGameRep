@@ -62,7 +62,6 @@
     <Compile Include="Assets\Scripts\ProgressSaver.cs" />
     <Compile Include="Assets\Scripts\LevelSelectOnClick.cs" />
     <Compile Include="Assets\Scripts\WaypointDisplay.cs" />
-    <Compile Include="Assets\Scripts\reverseOption.cs" />
     <Compile Include="Assets\Scripts\RevTgl.cs" />
     <Compile Include="Assets\Scripts\EnemyAnimations.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
@@ -79,7 +78,6 @@
     <Compile Include="Assets\Scripts\MuteTgl.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\MusicTgl.cs" />
-    <Compile Include="Assets\Scripts\testTgl.cs" />
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\ExitLevel.cs" />
     <Compile Include="Assets\Scripts\ReturnMenuOnClick.cs" />

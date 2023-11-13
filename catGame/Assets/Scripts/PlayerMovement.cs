@@ -145,7 +145,10 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.y -= gravity * Time.smoothDeltaTime;
         controller.Move(moveDirection * Time.smoothDeltaTime);
     }
-
+    /*
+    I need to write a movable joystick center:
+    if the location of the current touch (A) is greater than the previous touch position (B) by more than a certain number, then make the center that location
+    */
     void ScreenJoystick()
     {
         if (Input.touchCount > 0)
