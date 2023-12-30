@@ -13,19 +13,18 @@ public class RevTgl : MonoBehaviour {
         {
             PlayerPrefs.SetInt("Rev", 0);//this creates a new key called Rev and sets its default to 0
         }
-        else
-        {
 
-            if (PlayerPrefs.GetInt("Rev") == 0)
-            {
-                //Debug.Log(toggle.name + " on awake, rev was set to OFF " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to OFF");
-                toggle.isOn = false;
-            }
-            else if (PlayerPrefs.GetInt("Rev") == 1)
-            {
-                //Debug.Log(toggle.name + " on awake, rev was set to ON " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to ON");
-                toggle.isOn = true;
-            }
+        if (PlayerPrefs.GetInt("Rev") == 0)
+        {
+            //Debug.Log(toggle.name + " on awake, rev was set to OFF " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to OFF");
+            toggle.isOn = false;
+            reversa = false;
+        }
+        else if (PlayerPrefs.GetInt("Rev") == 1)
+        {
+            //Debug.Log(toggle.name + " on awake, rev was set to ON " + PlayerPrefs.GetInt("Rev") + " in the playerprefs, setting the button in the main menu to ON");
+            toggle.isOn = true;
+            reversa = true;
         }
     }
 

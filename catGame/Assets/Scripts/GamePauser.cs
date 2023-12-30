@@ -16,7 +16,7 @@ public class GamePauser : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Mouse1)||Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("esc pressed");
+            //Debug.Log("esc pressed");
             if(Time.timeScale == 1)
             {
                 options.SetActive(true);
