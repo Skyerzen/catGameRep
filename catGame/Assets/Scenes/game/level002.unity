@@ -2616,7 +2616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495672, guid: fb7e6b178026c0142ac3da76ead9bced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.12
+      value: -4.57
       objectReference: {fileID: 0}
     - target: {fileID: 495672, guid: fb7e6b178026c0142ac3da76ead9bced, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4149,6 +4149,10 @@ PrefabInstance:
     - target: {fileID: 114000012485958844, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MuteTgl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889968693906923330, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -230,9 +230,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1138199719}
   - {fileID: 89171234}
   - {fileID: 519826181}
-  - {fileID: 1138199719}
   - {fileID: 492218547}
   - {fileID: 1466674219}
   - {fileID: 258941560}
@@ -5302,6 +5302,18 @@ PrefabInstance:
       value: 35.699997
       objectReference: {fileID: 0}
     - target: {fileID: 224000012689517708, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 35.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 552239527667814339, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 35.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906215530519473245, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
+      propertyPath: m_Color.a
+      value: 0.68235296
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302383775701462985, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 35.699997
       objectReference: {fileID: 0}

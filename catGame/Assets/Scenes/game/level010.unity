@@ -1979,11 +1979,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 11487024, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: timeA
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 11487024, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: timeB
-      value: 37
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 22423478, guid: 3aafcb86be7ff3c4b97819ea449f4159, type: 3}
       propertyPath: m_Pivot.x

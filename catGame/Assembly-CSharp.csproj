@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\ExitLevel.cs" />
     <Compile Include="Assets\Scripts\ReturnMenuOnClick.cs" />
+    <Compile Include="Assets\Scripts\joystickCntr.cs" />
     <Compile Include="Assets\Scripts\ScrnTgl.cs" />
     <Compile Include="Assets\Scripts\GamePauser.cs" />
     <Compile Include="Assets\Scripts\guardDogSounds.cs" />

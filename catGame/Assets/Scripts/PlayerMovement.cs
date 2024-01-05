@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float rateOfAcceleration = 6f;
     public float turnSpeed = 12f;
     public float reverse = 1; // Default to not reverse
+    public float sensitivity = 1;
     public Toggle movToggle;
     public Toggle scrnToggle;
     public bool screenCenter;
@@ -71,10 +72,12 @@ public class PlayerMovement : MonoBehaviour
         if (gameUI.GetComponent<ScrnTgl>().pantalla == true)
         {
             screenCenter = false;
+            sensitivity = 3.5f;
         }
         else
         {
             screenCenter = true;
+            sensitivity = 1f;
         }
     }
 
@@ -173,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
 
         scrnJoystick = currentTouchPosition;
         scrnJoystick = (scrnJoystick - center);
-        scrnJoystick = scrnJoystick * reverse;
+        scrnJoystick = scrnJoystick * sensitivity * reverse;
         scrnJoystick.Set(scrnJoystick.x / center.x * moveSpeed, scrnJoystick.y / center.y * moveSpeed);
         scrnJoystick = Vector2.ClampMagnitude(scrnJoystick, moveSpeed);
         if (scrnJoystick.sqrMagnitude < deadStick * deadStick)
