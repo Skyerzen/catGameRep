@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\ProgressSaver.cs" />
     <Compile Include="Assets\Scripts\LevelSelectOnClick.cs" />
     <Compile Include="Assets\Scripts\WaypointDisplay.cs" />
+    <Compile Include="Assets\Scripts\VideoController.cs" />
     <Compile Include="Assets\Scripts\RevTgl.cs" />
     <Compile Include="Assets\Scripts\EnemyAnimations.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />

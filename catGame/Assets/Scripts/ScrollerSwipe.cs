@@ -21,12 +21,12 @@ using System.Collections;
         void Update()
         {
             DetectSwipe();
-        scrollMove();
+            scrollMove();
         }
 
     void scrollMove()
     {
-        transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(pageDistance * -1, -40f, 0f), 8 * Time.deltaTime);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(pageDistance * -1, 0f, 0f), 8 * Time.deltaTime);
     }
 
         public void DetectSwipe()
@@ -90,7 +90,7 @@ using System.Collections;
         if (currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
         {
             swipeDirection = Swipe.Left;
-            pageDistance = Mathf.Clamp(pageDistance + 800f,-800f,1600);
+            pageDistance = Mathf.Clamp(pageDistance + 800f,-800f,800);
         }
         else if (currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
         {
