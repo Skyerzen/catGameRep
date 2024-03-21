@@ -1,8 +1,5 @@
 using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
-using System;
-using Unity.VisualScripting;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -38,11 +35,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            Debug.Log("esc pressed");
-        }*/
-
         if (GoalObj.GetComponent<ExitLevel>().goalReached)
         {
             PlayerStops();
@@ -60,11 +52,12 @@ public class PlayerMovement : MonoBehaviour
                 PlayerMove();
             }
         }
-        
+
         if (gameUI.GetComponent<RevTgl>().reversa == true)
         {
             reverse = -1;
-        }else
+        }
+        else
         {
             reverse = 1;
         }
@@ -148,15 +141,12 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.y -= gravity * Time.smoothDeltaTime;
         controller.Move(moveDirection * Time.smoothDeltaTime);
     }
-    /*
-    I need to write a movable joystick center:
-    if the location of the current touch (A) is greater than the previous touch position (B) by more than a certain number, then make the center that location
-    */
+
     void ScreenJoystick()
     {
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 || Input.GetMouseButton(0))
         {
-            Touch touch = Input.GetTouch(0);
+            Vector2 inputPosition = Input.touchCount > 0 ? Input.GetTouch(0).position : (Vector2)Input.mousePosition;
 
             if (screenCenter)
             {
@@ -164,14 +154,14 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (touch.phase == TouchPhase.Began)
+                if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
                 {
-                    initialTouchPosition = touch.position;
+                    initialTouchPosition = inputPosition;
                 }
                 center = initialTouchPosition;
             }
 
-            currentTouchPosition = touch.position;
+            currentTouchPosition = inputPosition;
         }
 
         scrnJoystick = currentTouchPosition;

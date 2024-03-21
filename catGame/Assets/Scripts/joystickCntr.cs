@@ -46,6 +46,9 @@ public class joystickCntr : MonoBehaviour
                 }
             }
         }
-            
+        else
+        {
+            touchObject.SetActive(false);
+        };
     }
 }
