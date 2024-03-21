@@ -10,6 +10,7 @@ public class joystickCntr : MonoBehaviour
     {
         if (gameUI.GetComponent<ScrnTgl>().pantalla == true)
         {
+            /*
             // Check if there is any touch input
             if (Input.touchCount > 0)
             {
@@ -20,7 +21,7 @@ public class joystickCntr : MonoBehaviour
                 {
                     // Get the touch position in world space
                     Vector3 touchPosition = touch.position;
-                    Debug.Log(touchPosition);
+                    //Debug.Log(touchPosition);
                     // If the object doesn't exist, instantiate it
                     if (touchObject == null)
                     {
@@ -45,6 +46,41 @@ public class joystickCntr : MonoBehaviour
                     }
                 }
             }
+            */
+
+            ///////////////////////////////////////////
+
+            if (Input.GetMouseButtonDown(0)) // 0 for left mouse button, 1 for right, 2 for middle
+            {
+                // Get the mouse position in world space
+                Vector3 mousePosition = Input.mousePosition;
+                //mousePosition.z = 10; // Set a default distance from the camera
+                //mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+                // If the object doesn't exist, instantiate it
+                if (touchObject == null)
+                {
+                    touchObject = Instantiate(gameObject, mousePosition, Quaternion.identity);
+                }
+                else
+                {
+                    // Move the object to the mouse position
+                    touchObject.transform.position = mousePosition;
+                }
+
+                // Make the object visible
+                touchObject.SetActive(true);
+            }
+            else if (Input.GetMouseButtonUp(0)) // 0 for left mouse button, 1 for right, 2 for middle
+            {
+                // Hide the object
+                if (touchObject != null)
+                {
+                    touchObject.SetActive(false);
+                }
+            }
+
+            ///////////////////////////////////////////////////////
         }
         else
         {
