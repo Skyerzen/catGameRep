@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ProgressSaver.cs" />
+    <Compile Include="Assets\Scripts\QuitGame.cs" />
     <Compile Include="Assets\Scripts\LevelSelectOnClick.cs" />
     <Compile Include="Assets\Scripts\WaypointDisplay.cs" />
     <Compile Include="Assets\Scripts\VideoController.cs" />
