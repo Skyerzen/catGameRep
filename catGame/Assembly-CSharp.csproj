@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\QuitGame.cs" />
     <Compile Include="Assets\Scripts\LevelSelectOnClick.cs" />
     <Compile Include="Assets\Scripts\WaypointDisplay.cs" />
+    <Compile Include="Assets\Scripts\OpenQuestionaire.cs" />
     <Compile Include="Assets\Scripts\VideoController.cs" />
     <Compile Include="Assets\Scripts\RevTgl.cs" />
     <Compile Include="Assets\Scripts\EnemyAnimations.cs" />
