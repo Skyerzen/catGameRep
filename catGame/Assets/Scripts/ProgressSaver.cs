@@ -19,12 +19,11 @@ public class ProgressSaver : MonoBehaviour
 
     void Awake()
     {
-        totalLvls = SceneManager.sceneCountInBuildSettings; //get the total number of levels in the game.
+        totalLvls = SceneManager.sceneCountInBuildSettings -4; //get the total number of levels in the game. (added a -4 to remove the intro, tutorial, menu and otro levels.
         buttonsObj = GameObject.FindGameObjectsWithTag("lvlBttn"); //gather all of the objects in the scene with the button tag.
         gradesObj = GameObject.FindGameObjectsWithTag("lvlGrd");  //gather all of the objects in the scene with the grade tag.
         buttons = new Button[buttonsObj.Length];
         grades = new Text[gradesObj.Length];
-
 
         if (scoreSaver == null) //singleton script for scoreKeeper
         {
@@ -82,7 +81,6 @@ public class ProgressSaver : MonoBehaviour
         for (int i = 0; i < totalLvls; i++)
         {
             grades[i].text = lvlScores[i];
-
         }
     }
 

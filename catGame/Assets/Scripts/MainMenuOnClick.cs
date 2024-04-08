@@ -17,7 +17,7 @@ public class MainMenuOnClick : MonoBehaviour
     {
         if (goal.GetComponent<ExitLevel>().goalReached == false && ProgressSaver.scoreSaver.lvlScores[currentLevel] == " ")
         {
-            ProgressSaver.scoreSaver.lvlScores[currentLevel] = "D";
+            ProgressSaver.scoreSaver.lvlScores[currentLevel - 1] = "D";
             ProgressSaver.scoreSaver.Save();
         }
         Time.timeScale = 1;
