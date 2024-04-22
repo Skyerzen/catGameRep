@@ -9,7 +9,7 @@ public class MainMenuOnClick : MonoBehaviour
 
     void Awake()
     {
-        currentLevel = SceneManager.GetActiveScene().buildIndex;
+        currentLevel = SceneManager.GetActiveScene().buildIndex -1;
         goal = GameObject.FindGameObjectWithTag("exit");
     }
 
@@ -17,7 +17,7 @@ public class MainMenuOnClick : MonoBehaviour
     {
         if (goal.GetComponent<ExitLevel>().goalReached == false && ProgressSaver.scoreSaver.lvlScores[currentLevel] == " ")
         {
-            ProgressSaver.scoreSaver.lvlScores[currentLevel - 1] = "D";
+            ProgressSaver.scoreSaver.lvlScores[currentLevel] = "D";
             ProgressSaver.scoreSaver.Save();
         }
         Time.timeScale = 1;

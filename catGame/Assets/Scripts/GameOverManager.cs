@@ -53,20 +53,22 @@ public class GameOverManager : MonoBehaviour
 
     void saveProgress()
     {
-        if(ProgressSaver.scoreSaver.lvlScores[currentLevel - 1]== " ")
+        if(ProgressSaver.scoreSaver.lvlScores[currentLevel]== " ")
         {
-            ProgressSaver.scoreSaver.lvlScores[currentLevel - 1] = "D";
+            ProgressSaver.scoreSaver.lvlScores[currentLevel] = "D";
         }
-        if (string.Compare(gText.text, ProgressSaver.scoreSaver.lvlScores[currentLevel - 1]) <= 0)//this just makes sure high scores are not overwritten by lower scores.
+        if (string.Compare(gText.text, ProgressSaver.scoreSaver.lvlScores[currentLevel]) <= 0)//this just makes sure high scores are not overwritten by lower scores.
         {
-            ProgressSaver.scoreSaver.lvlScores[currentLevel - 1] = gText.text;
+            ProgressSaver.scoreSaver.lvlScores[currentLevel] = gText.text;
         }
-        ProgressSaver.scoreSaver.lvlUnlocks[currentLevel] = true;
-        if(currentLevel < ProgressSaver.scoreSaver.totalLvls) //This makes sure you cannot go past the last level. this is only temporary. In the final game, the last level will be a movie level.
+        //ProgressSaver.scoreSaver.lvlUnlocks[currentLevel +1] = true;
+        if(currentLevel != ProgressSaver.scoreSaver.totalLvls -1) //This makes sure you cannot go past the last level. this is only temporary. In the final game, the last level will be a movie level.
         {
-            ProgressSaver.scoreSaver.lvlUnlocks[currentLevel] = true;
+            Debug.Log("current Level " + currentLevel);
+            Debug.Log("Total Levels " + (ProgressSaver.scoreSaver.totalLvls -1));
+            ProgressSaver.scoreSaver.lvlUnlocks[currentLevel + 1] = true;
         }
-        
+
         ProgressSaver.scoreSaver.Save();
     }
 
@@ -103,8 +105,8 @@ public class GameOverManager : MonoBehaviour
         Enemies = GameObject.FindGameObjectsWithTag("enemy");
         GoalObj = GameObject.FindGameObjectWithTag("exit");
         PowObj = GameObject.FindGameObjectWithTag("powerUp");
-        currentLevel = SceneManager.GetActiveScene().buildIndex;
-}
+        currentLevel = SceneManager.GetActiveScene().buildIndex -1;
+    }
 
     void Update()
     {
